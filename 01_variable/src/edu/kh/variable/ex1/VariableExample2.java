@@ -84,14 +84,14 @@ public class VariableExample2 {
 		
 		//4.특수문자 $,_ 만 사용가능 (하지만 쓰지 않는다)
 		int $intNumber; //문제는 없지만 개발자가 직접 이렇게 작성 안함..
-		int in_Number; //자바는 칸멜표기법 사용
-						//_작성 표기번은 DB에서 사용
+		int in_Number; //자바는 카멜표기법 사용
+						//_작성 표기법은 DB에서 사용
 						//MEMBER_NAME
 		
-		//5.카멜표기법(맨 처 소문자 시작, 후속 단어 첫글자 대문자)
-		char helloWorldApplebananaTomato;
+		//5.카멜표기법(맨 처음은 소문자 시작, 후속 단어 첫글자 대문자)
+		char helloWorldAppleBananaTomato;
 		
-		//6.변수명은 언어를 가리지 않음()하지만 쓰지 않음
+		//6.변수명은 언어를 가리지 않음 하지만 쓰지 않음
 		int 정수1번;
 		double 실수2번 =3.14;
 		System.out.println(실수2번);
