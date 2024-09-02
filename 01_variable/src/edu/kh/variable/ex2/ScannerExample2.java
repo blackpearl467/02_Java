@@ -10,7 +10,6 @@ public class ScannerExample2 {
 		//->단, 출력된 결과값은 소수점 이하 2째 자리까지만 표현
 		
 		//입력받아: Scanner 필요
-		
 		Scanner sc = new Scanner(System.in);
 		//정수: sc.nextInt();
 		//실수: sc.nextDouble();

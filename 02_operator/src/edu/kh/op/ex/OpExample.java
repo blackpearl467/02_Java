@@ -24,10 +24,9 @@ public class OpExample {//예제 코드 작성용 클래스
 		
 		//후위연산
 		int temp2 = 3;
-		System.out.println(temp2 + 2); //5
-		//3+2 ->5
-		//3->2
-		System.out.println(temp2); //2
+		
+		System.out.println(temp2 + 2); //5 //3+2 ->5
+		System.out.println(temp2); //2 //3->2
 		
 		int a=3;
 		int b=5;
@@ -109,7 +108,7 @@ public class OpExample {//예제 코드 작성용 클래스
 			
 		String result2 = input >= 0 ? "양수입니다" : "음수입니다";
 		
-		System.out.println(result);
+		System.out.println(result2);
 	}
 }
 		

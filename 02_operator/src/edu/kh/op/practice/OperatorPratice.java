@@ -1,5 +1,7 @@
 package edu.kh.op.practice;
 
+import java.util.Scanner;
+
 public class OperatorPratice {//기능 제공용 클래스
 	//메서드..
 	public void practice1() {
@@ -9,7 +11,7 @@ public class OperatorPratice {//기능 제공용 클래스
 	 * 1인당 동일하게 나눠가진 사탕 개수와 나눠주고 
 	 * 남은 사탕의 개수를 출력하세요.
 	 */
-Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("인원 수 : ");
 		int input1 = sc.nextInt();
