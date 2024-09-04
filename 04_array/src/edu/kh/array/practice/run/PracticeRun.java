@@ -5,12 +5,20 @@ import edu.kh.array.practice.service.PracticeService;
 public class PracticeRun {
 
 	public static void main(String[] args) {
-		PracticeService practiceSe = new PracticeService();
-		//practiceSe.practice1();
-		//practiceSe.practice3();
-		//practiceSe.practice5();
-		//practiceSe.practice6();
-		practiceSe.practice9();
-		//practiceSe.practice10();
+		PracticeService ps = new PracticeService();
+		//ps.practice1();
+		//ps.practice2();
+		//ps.practice3();
+		//ps.practice4();
+		//ps.practice5();
+		//ps.practice6();
+		//ps.practice7();
+		//ps.practice8();
+		ps.practice9();
+		//ps.practice10();
+		//ps.practice11();
+		//ps.practice12();
+		//ps.practice13();
+		//ps.practice14();
 	}
 }
