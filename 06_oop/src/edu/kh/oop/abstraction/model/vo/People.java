@@ -16,6 +16,9 @@ public class People { //국민(사람) 클래스
 	//캡슐화
 	//-데이터와 기능을 하나로 묶어서 관리하는 비법
 	//-데이터의 직접적인 접근을 제한하는것이 원칙이다
+	//->직접접근을 못하기 때문에
+	//	클래스 내부에 간접접근방법을 제공하는 기능(메서드) 작성해둔다
+	//->getter/setter
 	
 	//**데이터 직접 접근 제한**
 	//public(공공의) -> private(사적인, 개인적인)변경
@@ -36,5 +39,56 @@ public class People { //국민(사람) 클래스
 	public void vote() {
 		System.out.println("투표를 합니다... 꼭 하세요");
 	}
+	
+	//캡슐화에서 사용할 간접 접근 기능(getter/setter)
+	//[접근제한자] 반환형 메서드명 {}
+	
+	//name 변수의 값을 호출한 쪽으로 돌려 보내주는 간접 접근 기능 중 getter
+	
+	//void:반환할 값이 없다(반환형(자료형)이 없다)
+	public String getName() {
+		return name;
+	}
+	//name 변수에 값을 세팅하는 간접 접근 기능 중 setter
+	public void setName(String name) {
+		// 매개변수 String name
+		//->String 타입의 데이터를 전달받아 저장하고 있는 변수
+		//** this : 현재 객체
+		this.name = name;
+	}
+	public char getGender() {
+		return gender;
+	}
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	public String getpNo() {
+		return pNo;
+	}
+	public void setpNo(String pNo) {
+		this.pNo = pNo;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	//alt+shift+s 또는 상단메뉴 Source
+	//->Generate Getters and Setters... 클릭
+	//->selectAll -> generate 클릭
 	
 }
