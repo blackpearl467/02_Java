@@ -1,25 +1,42 @@
 package edu.kh.oop.practice.model.service;
 
-import edu.kh.oop.cls.model.vo.User;
 import edu.kh.oop.practice.model.vo.Book;
 
 public class BookService {
-	public void ex1() {
+	
+	public void practice() {
+		//1)기본생성자를 이용하여 첫번째 book 객체 생성
+		Book book1 = new Book();//<-기본생성자
+
+		//2)매개변수생성자를 이용하여 2번째 book 객체 생성
+		Book book2 = new Book("자바의 정석", 30000, 0.2, "남궁성");
 		
+		//3)객체가 가진 필드값을 toString()을 이용하여 출력
+		System.out.println(book1.toString());
+		System.out.println(book2.toString());
+		System.out.println("=================");
 		
-		Book u1=new Book();
-		System.out.println(u1.getTitle());
-		System.out.println(u1.getPrice());
-		System.out.println(u1.getDiscountRate());
-		System.out.println(u1.getAuthor());
-		
-		Book u2=new Book("C언어", 30000, 0.1, "홍길동");
-		
-		System.out.printf("u1 : %s / %d / %d / %s\n");
-		
-		
-		
-		
+		// 4) 첫 번째 객체가 가진 값을 setter 를 이용해여 수정
+				book1.setTitle("C언어");
+				book1.setPrice(30000);
+				book1.setDiscountRate(0.1);
+				book1.setAuthor("홍길동");
+				
+				// 5) 수정된 객체의 필드 값을 toString() 메소드 이용하여 출력
+				System.out.println("수정된 결과 확인");
+				System.out.println(book1.toString());
+				System.out.println("==============================");
+				
+				// 6) 각 객체의 할인율을 적용한 책 가격을 계산하여 출력
+				// 할인된 가격 = 가격 - (가격 * 할인률)
+				System.out.printf("도서명 = %s\n", book1.getTitle());
+				System.out.printf("할인된 가격 = %d원\n", (int)(book1.getPrice() - (book1.getPrice() * book1.getDiscountRate()) ) );
+				System.out.printf("도서명 = %s\n", book2.getTitle());
+				System.out.printf("할인된 가격 = %d원\n", (int)(book2.getPrice() - (book2.getPrice() * book2.getDiscountRate()) ) );
+				
+				
+		//System.out.printf("u1 : %s / %d / %d / %s\n");
+			
 		
 	}
 }

@@ -125,16 +125,4 @@ public class ClsService /*extends Student*/ {
 		
 	}
 
-	
-	public void ex4() {
-		//매개변수 생성자 예제
-		User u1=new User(); //기본생성자
-		User u2=new User("user02","pass02"); //매개변수 2개 생성자
-		User u3=new User("user03", "pass03", "김길동", 30, '남'); 
-		//매개변수 5개 생성자(전부 초기화)
-		
-		System.out.printf("u1 : %s / %s / %s / %d / %c\n",
-				u1.getuser여기다시적기
-	}
-	
 }
