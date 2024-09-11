@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class OperatorPratice {//기능 제공용 클래스
 	//메서드..
+	
 	public void practice1() {
 	/*
 	 * 모든 사람이 사탕을 골고루 나눠가지려고 한다. 
