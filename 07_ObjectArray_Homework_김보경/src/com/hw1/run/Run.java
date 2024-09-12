@@ -14,9 +14,10 @@ public class Run {
 		private Employee[] emp = new Employee[3];
 		
 		//3개의 객체 중 값이 없는 필드에 각각 값을 넣은 뒤 출력
-		emp[0] = new Employee(0, "null", "null", "null", 0, " ", 0, 0.0, "null", "null")
-		emp[1] = new Employee(0, "null", "null", "null", 0, " ", 0, 0.0, "null", "null")
-		emp[2] = new Employee(0, "null", "null", "null", 0, " ", 0, 0.0, "null", "null")
+		emp[0] = new Employee(0, "null", "null", "null", 0, " ", 0, 0.0, "null", "null");
+		emp[1] = new Employee(1, "홍길동", "null", "null", 19, "M", 0, 0.0, "01022223333", "서울 잠실");
+		emp[2] = new Employee(2, "강말순", "교육부", "강사", 20, "F", 1000000, 0.01, "01011112222", "서울 마곡");
+	
 		
 		//직원 각각의 보너스가 적용된 1년 연봉을 계산하여 출력
 		//연봉=(급여+(급여*보너스포인트))*12

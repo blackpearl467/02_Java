@@ -22,13 +22,10 @@ public class Poetry extends Book{
 		this.numberOfPoems = numberOfPoems;
 	}
 	
-	
-	public void displayInfo() {
-		
-	}
-	
+
 	@Override
-	public String toString() {
-		return "제목 : " + title + " / " + "저자 : " + author + " / " + "시 수 : " + numberOfPoems;
+	public void displayInfo() {
+		System.out.printf("[시집] 제목 : %s / 저자 : %s / 시 수 : %d",
+						super.getTitle(), super.getAuthor(), numberOfPoems);
 	}
 }
