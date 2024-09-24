@@ -449,9 +449,9 @@ public class StudentService {
 	
 	
 
-}
+
 	
-	
+}	
 //★★★★★시험★★★★★
 //★★컬렉션-list에서 나옴★★
-
+//List<E>list=new ArrayList<E>();
