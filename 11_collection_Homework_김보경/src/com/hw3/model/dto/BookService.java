@@ -61,6 +61,7 @@ public class BookService {
 				case 3 : System.out.println(editBook()); break;
 				
 				case 4 : System.out.println(deleteBook()); break;
+				
 				/*
 				case 5 : addFavorite(); break;
 				case 6 : deleteFavorite(); break;
